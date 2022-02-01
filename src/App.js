@@ -33,7 +33,7 @@ function App() {
 
     // 2. async and await
     try {
-      const response = await fetch('https://swapi.dev/api/films')
+      const response = await fetch('https://react-api-392b9-default-rtdb.asia-southeast1.firebasedatabase.app/movies.json')
       // *** fetch won't generate error by itself ***
       if (!response.ok) {
         throw new Error('Something went wrong!')
